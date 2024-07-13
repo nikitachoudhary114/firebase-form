@@ -5,7 +5,7 @@ const User = require("./config.js");
 const session = require("express-session");
 const flash = require("connect-flash")
 const exp = require('constants');
-const serviceAccount = require('./config/serviceAccountKey.json');
+const serviceAccount = require('./serviceAccountKey.json');
 
 
 app.set("views", path.join(__dirname, "views"));
