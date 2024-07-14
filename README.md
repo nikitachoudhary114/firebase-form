@@ -2,15 +2,14 @@
 it ia a form connected to firebase for storing user data
 
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/nikitachoudhary114/firebase-form.git
 
 # Navigate to the project directory
 cd firebase-form
 
 # Install dependencies
 npm install
-make a file named serviceAccountKey.json and add the contents from below link
-https://drive.google.com/file/d/12519kJ5xZ6w8XzHsk6Pprp4f6BbcsR3p/view?usp=sharing
+
 
 # Start the development server
 node app.js
