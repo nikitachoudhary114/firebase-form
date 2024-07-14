@@ -2,7 +2,7 @@
 it ia a form connected to firebase for storing user data
 
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/nikitachoudhary114/firebase-form.git
 
 # Navigate to the project directory
 cd firebase-form
