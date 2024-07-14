@@ -3,6 +3,11 @@
 require('dotenv').config();
 const admin = require('firebase-admin');
 
+if (!process.env.PRIVATE_KEY) {
+    throw new Error('PRIVATE_KEY environment variable is not set.');
+}
+
+
 const serviceAccount = {
     type: process.env.TYPE,
     project_id: process.env.PROJECT_ID,

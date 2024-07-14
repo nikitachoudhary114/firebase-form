@@ -31,8 +31,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", async (req, res) => {
-    let { email, name, message } = req.body;
-    let a = await User.add({ email, name, message });
+    let data = req.body;
+
+    let a = await User.add({ data});
     req.flash("success", "Form submitted")
     res.redirect("/");
 });
