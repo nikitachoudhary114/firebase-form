@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const path = require("path");
@@ -5,7 +7,7 @@ const User = require("./config.js");
 const session = require("express-session");
 const flash = require("connect-flash")
 const exp = require('constants');
-const serviceAccount = require('./serviceAccountKey.json');
+// const serviceAccount = require('./serviceAccountKey.json');
 
 
 app.set("views", path.join(__dirname, "views"));
@@ -13,7 +15,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(session({
-    secret: serviceAccount.secret,
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true
 }));
